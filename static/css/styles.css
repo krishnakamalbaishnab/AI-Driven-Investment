@@ -1,0 +1,63 @@
+body {
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.hero-section {
+    background-image: url('https://source.unsplash.com/1600x900/?finance,investment');
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    color: #FF6347; /* Tomato color for the heading */
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    color: #0014FF; /* Blue color for the subheading */
+}
+
+.container {
+    flex: 1;  /* Ensures the container takes up available space */
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;  /* Pushes the footer to the bottom */
+}
+
+.footer a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.chart-container {
+    position: relative;
+    width: 100%;  /* Make the container full width */
+    max-width: 1200px;  /* Set a max-width for larger screens */
+    height: 600px;  /* Increase height for the chart */
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
